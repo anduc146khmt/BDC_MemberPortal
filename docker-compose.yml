@@ -1,0 +1,22 @@
+version: '3'
+
+services:
+  web-ui:
+    image: hpccbk/ai-scheduling-portal:latest
+    networks:
+      - ai-scheduling
+    ports:
+      - '3200:80'
+    deploy:
+      mode: replicated
+      replicas: 1
+      restart_policy:
+        condition: on-failure
+      placement:
+        constraints:
+          - node.hostname == headnode.supernodexp.hpc
+
+networks:
+  ai-scheduling:
+    external:
+      name: ai-scheduling

@@ -1,0 +1,49 @@
+@import (reference) '~antd/es/style/themes/index';
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  overflow: auto;
+}
+
+.lang {
+  width: 100%;
+  height: 40px;
+  line-height: 44px;
+  text-align: right;
+  :global(.ant-dropdown-trigger) {
+    margin-right: 24px;
+  }
+}
+
+.content {
+  flex: 1;
+  padding: 32px 0;
+}
+
+@media (min-width: @screen-md-min) {
+  .container {
+    background-image: -webkit-linear-gradient( 0deg, rgba(0, 0, 12, 0.9) 0%, hsla(0, 0%, 100%, 0.10) 100%), url("https://raw.githubusercontent.com/anduc146khmt/instruction-demo/master/img/IMG_1423.jpg");
+    background-size: cover;
+  }
+}
+.icon {
+  margin-left: 8px;
+  color: rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: @primary-color;
+  }
+}
+.content {
+  width: 500px;
+  margin: 100px auto; 
+  padding: 50px 30px; 
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: 40px;
+}

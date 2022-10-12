@@ -1,0 +1,24 @@
+@import '~antd/es/style/themes/default.less';
+
+.field {
+  display: inline-block;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  .label,
+  .number,
+  .unit {
+    font-size: @font-size-base;
+    line-height: 22px;
+  }
+  .number {
+    margin-left: 5px;
+    color: @heading-color;
+    font-weight: 600;
+  }
+  .unit {
+    margin-left: 4px;
+    color: #1fc5c5;
+  }
+}
