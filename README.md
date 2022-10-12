@@ -1,6 +1,6 @@
 # Member Portal Project
 
-Member Portal Service allow member to view their information, their contribution to Big Data Club and admin to manage human resources.
+Member Portal Service allows members to view their information, their contribution to Big Data Club and EB to manage human resources.
 
 # Technology
 
