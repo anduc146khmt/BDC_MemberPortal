@@ -9,7 +9,7 @@ Back-end: NestJS, LDAP.
 
 # Page
 
-Subpages will be update when it is completed...
+Subpages will be updated when it is completed...
 
 ## Login Page
 
